@@ -1,0 +1,69 @@
+{
+  "exam_config": {
+    "duration": 30,
+    "total_marks": 25,
+    "passing_percentage": 40
+  },
+  "camera_config": {
+    "frame_width": 320,
+    "frame_height": 240,
+    "fps": 30
+  },
+  "color_palette": {
+    "primary": "#7C5BA6",
+    "primary_light": "#B19CD9",
+    "primary_very_light": "#E6D9F0",
+    "white": "#FFFFFF",
+    "accent": "#9D4EDD",
+    "text_dark": "#2D1B4E",
+    "border": "#D4C5E2",
+    "success": "#06A77D",
+    "danger": "#E63946",
+    "warning": "#F77F00",
+    "info": "#457B9D",
+    "dark_bg": "#1A0E2E"
+  },
+  "ai_model": {
+    "model_path": "model.h5",
+    "confidence_threshold": 0.7
+  },
+  "exams": [
+    {
+      "exam_id": "general_knowledge_science_001",
+      "name": "General Knowledge & Science",
+      "duration": 30,
+      "total_marks": 25,
+      "passing_percentage": 40,
+      "created_date": "2026-04-05",
+      "num_questions": 25,
+      "questions": [
+        {"qid": 1, "question": "What is the capital of France?", "options": ["London", "Paris", "Berlin", "Madrid"], "correct_answer": 1, "marks": 1},
+        {"qid": 2, "question": "Which planet is known as the Red Planet?", "options": ["Venus", "Mars", "Jupiter", "Saturn"], "correct_answer": 1, "marks": 1},
+        {"qid": 3, "question": "What is the chemical symbol for Gold?", "options": ["Go", "Gd", "Au", "Ag"], "correct_answer": 2, "marks": 1},
+        {"qid": 4, "question": "Who wrote 'Romeo and Juliet'?", "options": ["Jane Austen", "William Shakespeare", "Mark Twain", "Charles Dickens"], "correct_answer": 1, "marks": 1},
+        {"qid": 5, "question": "What is the smallest prime number?", "options": ["0", "1", "2", "3"], "correct_answer": 2, "marks": 1},
+        {"qid": 6, "question": "Which country is home to the kangaroo?", "options": ["New Zealand", "Australia", "Brazil", "India"], "correct_answer": 1, "marks": 1},
+        {"qid": 7, "question": "What is the atomic number of Carbon?", "options": ["4", "6", "8", "12"], "correct_answer": 1, "marks": 1},
+        {"qid": 8, "question": "Who is considered the father of computers?", "options": ["Alan Turing", "Charles Babbage", "Bill Gates", "Steve Jobs"], "correct_answer": 1, "marks": 1},
+        {"qid": 9, "question": "What is the speed of light?", "options": ["300,000 m/s", "300,000 km/s", "3,000 km/s", "30,000 m/s"], "correct_answer": 1, "marks": 1},
+        {"qid": 10, "question": "Which is the longest river in the world?", "options": ["Amazon", "Yangtze", "Nile", "Mississippi"], "correct_answer": 2, "marks": 1},
+        {"qid": 11, "question": "What is the chemical formula for table salt?", "options": ["NaCl", "KCl", "CaCl", "MgCl"], "correct_answer": 0, "marks": 1},
+        {"qid": 12, "question": "In which year did World War II end?", "options": ["1943", "1944", "1945", "1946"], "correct_answer": 2, "marks": 1},
+        {"qid": 13, "question": "What is the boiling point of water?", "options": ["90°C", "100°C", "110°C", "120°C"], "correct_answer": 1, "marks": 1},
+        {"qid": 14, "question": "Which element has the symbol 'Fe'?", "options": ["Fluorine", "Iron", "Fermium", "Francium"], "correct_answer": 1, "marks": 1},
+        {"qid": 15, "question": "What is the capital of Japan?", "options": ["Osaka", "Kyoto", "Tokyo", "Hiroshima"], "correct_answer": 2, "marks": 1},
+        {"qid": 16, "question": "Which gas do plants use for photosynthesis?", "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"], "correct_answer": 2, "marks": 1},
+        {"qid": 17, "question": "How many bones are in the human body?", "options": ["186", "206", "226", "246"], "correct_answer": 1, "marks": 1},
+        {"qid": 18, "question": "What is the powerhouse of the cell?", "options": ["Nucleus", "Mitochondria", "Ribosome", "Chloroplast"], "correct_answer": 1, "marks": 1},
+        {"qid": 19, "question": "Which planet is closest to the Sun?", "options": ["Venus", "Mercury", "Earth", "Mars"], "correct_answer": 1, "marks": 1},
+        {"qid": 20, "question": "What is the SI unit of force?", "options": ["Joule", "Watt", "Newton", "Pascal"], "correct_answer": 2, "marks": 1},
+        {"qid": 21, "question": "Who painted the Mona Lisa?", "options": ["Michelangelo", "Leonardo da Vinci", "Raphael", "Donatello"], "correct_answer": 1, "marks": 1},
+        {"qid": 22, "question": "What is the largest planet in our solar system?", "options": ["Saturn", "Neptune", "Jupiter", "Uranus"], "correct_answer": 2, "marks": 1},
+        {"qid": 23, "question": "How many continents are there?", "options": ["5", "6", "7", "8"], "correct_answer": 2, "marks": 1},
+        {"qid": 24, "question": "What is the most abundant gas in Earth's atmosphere?", "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Helium"], "correct_answer": 1, "marks": 1},
+        {"qid": 25, "question": "Which country has the most populous city in the world?", "options": ["Japan", "India", "China", "Nigeria"], "correct_answer": 2, "marks": 1}
+      ]
+    }
+  ],
+  "questions": []
+}
