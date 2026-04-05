@@ -299,10 +299,10 @@ class CameraFeed:
         
         # Status indicators
         if len(faces) != 1:
-            cv2.putText(frame, "⚠ Check Position", (10, 30),
+            cv2.putText(frame, "[!] Check Position", (10, 30),
                        cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2)
         else:
-            cv2.putText(frame, "✓ Detected", (10, 30),
+            cv2.putText(frame, "[OK] Face Detected", (10, 30),
                        cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
         
         cv2.putText(frame, f"Look Away: {self.exam_session.look_away_count}", (10, 60),
