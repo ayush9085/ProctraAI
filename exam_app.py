@@ -798,6 +798,12 @@ class ProctraAIApp:
     
     def select_option(self, idx):
         """Select an option with tick box"""
+        # Clear all other options first
+        for i in range(4):
+            if i != idx:
+                self.option_vars[i].set('')
+        
+        # Set the selected option
         self.option_vars[idx].set(str(idx))
         current = self.exam_session.get_current_question()
         if current:
