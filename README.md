@@ -6,26 +6,9 @@
 
 ---
 
-## 🌐 BIG ANNOUNCEMENT 🚀
+## 🎨 Coming Soon - Web Platform
 
-```
-╔════════════════════════════════════════════════════════════════╗
-║                                                                ║
-║              🎉 WEB PLATFORM LAUNCHING SOON 🎉               ║
-║                                                                ║
-║     ☁️  Cloud-Based | 💻 Browser Access | 🌍 Global Scale   ║
-║                                                                ║
-║              No Installation. No Setup. Pure Power.           ║
-║                                                                ║
-║              📧 Join our waitlist for early access           ║
-║                                                                ║
-╚════════════════════════════════════════════════════════════════╝
-```
-
-**Status**: Q3 2026 | **Progress**: Under Active Development  
-**Early Access**: Opening soon for beta testers  
-
-👉 **[Notify Me When Live](https://github.com/ayush9085/ProctraAI/discussions)** (Star ⭐ this repo to stay updated)
+![Coming Soon](./coming-soon.png)
 
 ---
 
