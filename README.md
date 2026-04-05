@@ -6,6 +6,29 @@
 
 ---
 
+## 🌐 BIG ANNOUNCEMENT 🚀
+
+```
+╔════════════════════════════════════════════════════════════════╗
+║                                                                ║
+║              🎉 WEB PLATFORM LAUNCHING SOON 🎉               ║
+║                                                                ║
+║     ☁️  Cloud-Based | 💻 Browser Access | 🌍 Global Scale   ║
+║                                                                ║
+║              No Installation. No Setup. Pure Power.           ║
+║                                                                ║
+║              📧 Join our waitlist for early access           ║
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+```
+
+**Status**: Q3 2026 | **Progress**: Under Active Development  
+**Early Access**: Opening soon for beta testers  
+
+👉 **[Notify Me When Live](https://github.com/ayush9085/ProctraAI/discussions)** (Star ⭐ this repo to stay updated)
+
+---
+
 ## 📊 What is ProctraAI?
 
 ProctraAI is a **complete end-to-end proctoring solution** that ensures exam integrity while maintaining an excellent user experience. Using advanced computer vision and AI, we monitor test-takers in real-time, detect suspicious activities, and provide actionable insights to educators.
