@@ -641,7 +641,11 @@ class ProctraAIApp:
         
         legend_title = tk.Label(legend_frame, text="Status Legend:", font=('Arial', 10, 'bold'),
                                bg=COLORS['light_gray'], fg=COLORS['text_dark'])
-        legend_title.pack(anchor='w', padx=4, pady=(4, 6))
+        legend_title.pack(anchor='w', padx=4, pady=(2, 4))
+        
+        # Legend items row
+        legend_items_frame = tk.Frame(legend_frame, bg=COLORS['light_gray'])
+        legend_items_frame.pack(fill='x', padx=4, pady=(0, 2))
         
         legend_items = [
             ('■', COLORS['answered'], 'Answered'),
@@ -651,9 +655,15 @@ class ProctraAIApp:
         ]
         
         for i, (sym, color, label) in enumerate(legend_items):
-            lbl = tk.Label(legend_frame, text=f'{sym} {label}', font=('Arial', 10, 'bold'),
-                          fg=color, bg=COLORS['light_gray'])
-            lbl.grid(row=1, column=i, padx=8, pady=4, sticky='w')
+            item_frame = tk.Frame(legend_items_frame, bg=COLORS['light_gray'])
+            item_frame.pack(side='left', padx=6, fill='x', expand=True)
+            
+            # Use black text for white box to make it readable
+            text_color = color if color != COLORS['unanswered'] else COLORS['text_dark']
+            
+            lbl = tk.Label(item_frame, text=f'{sym} {label}', font=('Arial', 10, 'bold'),
+                          fg=text_color, bg=COLORS['light_gray'])
+            lbl.pack(anchor='w')
         
         # Question grid - Canvas-based for reliable color persistence on macOS
         self.grid_canvas = tk.Canvas(right_content, bg=COLORS['white'], highlightthickness=0)
