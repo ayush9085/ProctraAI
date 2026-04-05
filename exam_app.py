@@ -635,21 +635,25 @@ class ProctraAIApp:
                            bg=COLORS['primary_light'], fg=COLORS['primary'], padx=10, pady=8)
         grid_hdr.pack(fill='x')
         
-        # Legend
+        # Legend - Color guide for question status
         legend_frame = tk.Frame(right_content, bg=COLORS['light_gray'])
-        legend_frame.pack(fill='x', padx=8, pady=6)
+        legend_frame.pack(fill='x', padx=8, pady=8)
+        
+        legend_title = tk.Label(legend_frame, text="Status Legend:", font=('Arial', 10, 'bold'),
+                               bg=COLORS['light_gray'], fg=COLORS['text_dark'])
+        legend_title.pack(anchor='w', padx=4, pady=(4, 6))
         
         legend_items = [
-            ('■', COLORS['answered'], 'A'),
-            ('■', COLORS['unanswered'], 'U'),
-            ('■', COLORS['flagged'], 'F'),
-            ('■', COLORS['review'], 'R'),
+            ('■', COLORS['answered'], 'Answered'),
+            ('■', COLORS['unanswered'], 'Unanswered'),
+            ('■', COLORS['flagged'], 'Flagged'),
+            ('■', COLORS['review'], 'Review'),
         ]
         
         for i, (sym, color, label) in enumerate(legend_items):
-            lbl = tk.Label(legend_frame, text=f'{sym}{label}', font=('Arial', 7),
+            lbl = tk.Label(legend_frame, text=f'{sym} {label}', font=('Arial', 10, 'bold'),
                           fg=color, bg=COLORS['light_gray'])
-            lbl.grid(row=0, column=i, padx=4, pady=2)
+            lbl.grid(row=1, column=i, padx=8, pady=4, sticky='w')
         
         # Question grid - Canvas-based for reliable color persistence on macOS
         self.grid_canvas = tk.Canvas(right_content, bg=COLORS['white'], highlightthickness=0)
