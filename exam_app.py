@@ -474,14 +474,14 @@ class ProctraAIApp:
                 fg=COLORS['white'], bg=COLORS['primary']).pack(anchor='w')
         
         tk.Label(left_hdr, text=f"Roll: {self.exam_session.roll_no}",
-                font=('Arial', 10),
+                font=('Arial', 11, 'bold'),
                 fg=COLORS['primary_light'], bg=COLORS['primary']).pack(anchor='w')
         
         timer_frame = tk.Frame(hdr, bg=COLORS['primary'])
         timer_frame.pack(side='right')
         
         tk.Label(timer_frame, text="Time Remaining",
-                font=('Arial', 10),
+                font=('Arial', 11, 'bold'),
                 fg=COLORS['primary_light'], bg=COLORS['primary']).pack()
         
         self.timer_label = tk.Label(timer_frame, text="30:00",
@@ -569,7 +569,7 @@ class ProctraAIApp:
                                  activeforeground=COLORS['white'])
         self.flag_btn.pack(side='left', padx=4)
         
-        self.q_indicator = tk.Label(nav_frame, text="1/25", font=('Arial', 11, 'bold'),
+        self.q_indicator = tk.Label(nav_frame, text="1/25", font=('Arial', 12, 'bold'),
                                    fg=COLORS['primary'], bg=COLORS['light_gray'])
         self.q_indicator.pack(side='left', expand=True, padx=12)
         
@@ -605,34 +605,34 @@ class ProctraAIApp:
         status_frame = tk.Frame(right_content, bg=COLORS['success'])
         status_frame.pack(fill='x', padx=8, pady=(0, 8))
         
-        self.status_label = tk.Label(status_frame, text="✓ Monitoring", font=('Arial', 10, 'bold'),
-                                    bg=COLORS['success'], fg=COLORS['white'], padx=10, pady=5)
+        self.status_label = tk.Label(status_frame, text="✓ Monitoring", font=('Arial', 12, 'bold'),
+                                    bg=COLORS['success'], fg=COLORS['white'], padx=10, pady=6)
         self.status_label.pack(fill='x')
         
         # Stats panel
         stats_frame = tk.Frame(right_content, bg=COLORS['light_gray'])
         stats_frame.pack(fill='x', padx=8, pady=(0, 8))
         
-        self.lookaway_label = tk.Label(stats_frame, text="Look Away: 0", font=('Arial', 9, 'bold'),
+        self.lookaway_label = tk.Label(stats_frame, text="Look Away: 0", font=('Arial', 11, 'bold'),
                                       bg=COLORS['light_gray'], fg=COLORS['danger'])
         self.lookaway_label.pack(anchor='w', padx=8, pady=3)
         
         # Warning message
-        self.warning_label = tk.Label(stats_frame, text="", font=('Arial', 9, 'bold'),
-                                     bg=COLORS['warning'], fg=COLORS['white'], padx=8, pady=2)
+        self.warning_label = tk.Label(stats_frame, text="", font=('Arial', 11, 'bold'),
+                                     bg=COLORS['warning'], fg=COLORS['white'], padx=8, pady=4)
         self.warning_label.pack(anchor='w', padx=8, pady=1, fill='x')
         
-        self.suspicious_label = tk.Label(stats_frame, text="Suspicious: 0", font=('Arial', 8),
+        self.suspicious_label = tk.Label(stats_frame, text="Suspicious: 0", font=('Arial', 10),
                                         bg=COLORS['light_gray'], fg=COLORS['text_light'])
         self.suspicious_label.pack(anchor='w', padx=8, pady=1)
         
-        self.alerts_label = tk.Label(stats_frame, text="Alerts: 0", font=('Arial', 8),
+        self.alerts_label = tk.Label(stats_frame, text="Alerts: 0", font=('Arial', 10),
                                     bg=COLORS['light_gray'], fg=COLORS['text_light'])
         self.alerts_label.pack(anchor='w', padx=8, pady=(1, 3))
         
         # Question grid section
-        grid_hdr = tk.Label(right_content, text="Questions", font=('Arial', 10, 'bold'),
-                           bg=COLORS['primary_light'], fg=COLORS['primary'], padx=10, pady=6)
+        grid_hdr = tk.Label(right_content, text="Questions", font=('Arial', 11, 'bold'),
+                           bg=COLORS['primary_light'], fg=COLORS['primary'], padx=10, pady=8)
         grid_hdr.pack(fill='x')
         
         # Legend
@@ -708,11 +708,11 @@ class ProctraAIApp:
         summary_frame.pack(fill='x', padx=8, pady=(0, 8))
         
         self.answered_label = tk.Label(summary_frame, text="Answered: 0/25", 
-                                      font=('Arial', 8), bg=COLORS['light_gray'], fg=COLORS['answered'])
+                                      font=('Arial', 10, 'bold'), bg=COLORS['light_gray'], fg=COLORS['answered'])
         self.answered_label.pack(anchor='w', padx=8, pady=2)
         
         self.flagged_label = tk.Label(summary_frame, text="Flagged: 0", 
-                                     font=('Arial', 8), bg=COLORS['light_gray'], fg=COLORS['flagged'])
+                                     font=('Arial', 10, 'bold'), bg=COLORS['light_gray'], fg=COLORS['flagged'])
         self.flagged_label.pack(anchor='w', padx=8, pady=(0, 2))
         
         self.update_timer()
