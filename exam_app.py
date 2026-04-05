@@ -16,18 +16,18 @@ from PIL import Image, ImageTk, ImageDraw
 import os
 
 
-# Modern Lavender & White Color Palette
+# Modern Lavender & Cream Color Palette (from "Coming Soon" design)
 COLORS = {
-    'primary': '#7C5BA6',          # Deep Lavender
-    'primary_light': '#B19CD9',    # Light Lavender
-    'primary_very_light': '#E6D9F0', # Very Light Lavender
+    'primary': '#8B7BC9',          # Rich Lavender (main theme)
+    'primary_light': '#B8A5D6',    # Light Lavender
+    'primary_very_light': '#E2D5F0', # Very Light Lavender
     'white': '#FFFFFF',
-    'accent': '#9D4EDD',           # Purple accent
-    'accent_light': '#D5A3FF',     # Light purple
-    'dark_bg': '#F8F6FF',          # Off-white
-    'text_dark': '#2D1B4E',        # Dark purple text
-    'text_light': '#5A4570',       # Medium purple text
-    'border': '#D4C5E2',           # Border color
+    'accent': '#FFFACD',           # Cream/Gold (from coming-soon image)
+    'accent_light': '#FFFEF0',     # Very light cream
+    'dark_bg': '#F5F1FB',          # Soft lavender background
+    'text_dark': '#4A3F6B',        # Dark purple text
+    'text_light': '#6B5B9E',       # Medium purple text
+    'border': '#D0C3E0',           # Border color
     'success': '#06D6A0',          # Green
     'warning': '#FFB703',          # Orange
     'danger': '#D62828',           # Red
